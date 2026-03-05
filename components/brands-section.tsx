@@ -75,7 +75,7 @@ export default function BrandsSection() {
             <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-muted to-secondary p-8">
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-muted">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-03-04%20at%203.37.40%E2%80%AFPM-8UzQSxzG5BazTc0X26GQyy4rBpwwcg.png"
+                  src="/images/brand_section_img.webp"
                   alt="Analytics Dashboard"
                   fill
                   className="object-cover"

@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div className="bg-gradient-to-br from-secondary to-muted/30 rounded-3xl p-8 sm:p-12">
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-muted">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-03-04%20at%203.37.22%E2%80%AFPM.png-QcSK5wFhqmXu3FbHTheG9H72nAcflu.jpeg"
+                src="/images/hero_image.webp"
                 alt="Proffita Platform"
                 fill
                 className="object-cover"
