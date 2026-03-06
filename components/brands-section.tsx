@@ -72,7 +72,7 @@ export default function BrandsSection() {
 
           {/* Image */}
           <div className={`transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-8'}`}>
-            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-muted to-secondary p-8">
+            <div className="rounded-3xl overflow-hidden bg-gradient-to-br from-muted to-secondary p-2">
               <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-muted">
                 <Image
                   src="/images/brand_section_img.webp"

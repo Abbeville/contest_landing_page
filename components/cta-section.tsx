@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function CTASection() {
@@ -49,14 +50,14 @@ export default function CTASection() {
             <div className={`flex flex-col sm:flex-row justify-center gap-4 transition-all duration-700 delay-300 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}>
-              <button className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-white/90 transition-all hover:shadow-xl font-semibold flex items-center justify-center gap-2 group">
+              <Link href="https://app.proffita.com/brand/login" className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-white/90 transition-all hover:shadow-xl font-semibold flex items-center justify-center gap-2 group">
                 Launch a Contest
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </button>
-              <button className="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all font-semibold flex items-center justify-center gap-2 group">
+              </Link>
+              <Link href="https://app.proffita.com/creator/login" className="px-8 py-3 border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all font-semibold flex items-center justify-center gap-2 group">
                 Join a Contest
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </button>
+              </Link>
             </div>
           </div>
         </div>

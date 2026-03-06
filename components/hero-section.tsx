@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -22,10 +23,13 @@ export default function HeroSection() {
         </div>
 
         {/* Heading */}
-        <div className={`text-center mb-16 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+        <div className={`text-center flex flex-col gap-2 mb-16 transition-all duration-700 delay-100 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`} >
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-4">
             <span className="text-primary">GO VIRAL.</span>
-            <br />
+            {/* <span className="text-primary italic">GET PAID.</span> */}
+          </h1>
+
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-4">
             <span className="text-primary italic">GET PAID.</span>
           </h1>
         </div>
@@ -33,7 +37,7 @@ export default function HeroSection() {
         {/* Hero Image */}
         <div className={`relative rounded-3xl overflow-hidden transition-all duration-700 delay-200 mb-12 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}>
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent z-10 rounded-3xl" />
-          <div className="bg-gradient-to-br from-secondary to-muted/30 rounded-3xl p-8 sm:p-12">
+          <div className="bg-gradient-to-br from-secondary to-muted/30 rounded-3xl p-3 sm:p-3">
             <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-muted">
               <Image
                 src="/images/hero_image.webp"
@@ -57,14 +61,14 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:shadow-xl font-semibold flex items-center justify-center gap-2 group">
+            <Link href="https://app.proffita.com/brand/login" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-all hover:shadow-xl font-semibold flex items-center justify-center gap-2 group">
               Launch a Contest
               <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </button>
-            <button className="px-8 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-all font-semibold flex items-center justify-center gap-2 group">
+            </Link>
+            <Link href="https://app.proffita.com/creator/login" className="px-8 py-3 border border-primary text-primary rounded-lg hover:bg-primary/5 transition-all font-semibold flex items-center justify-center gap-2 group">
               Join a Contest
               <span className="group-hover:translate-x-1 transition-transform">→</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
